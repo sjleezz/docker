@@ -11,7 +11,7 @@ Docker
 5. WSL2로 변환하기
   5-1. wsl --list --verbose
   -> Name               state      version
-     Ubuntu-18.04 LTS   Running     1
+     </br>Ubuntu-18.04 LTS   Running     1
 6. wsl2를 기본 버전으로 설정  
   6-1. wsl --set-version Ubuntu-18.04 2
   6-2. wsl --set-default-version 2
