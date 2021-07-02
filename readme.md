@@ -72,3 +72,7 @@ docker rm $(docker ps -aq)
 ```
 docker image prune -a
 ```
+## Docker 일괄 실행
+```
+docker-compose up -d(백그라운드 실행 = daemon) 
+```
