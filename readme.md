@@ -29,13 +29,17 @@
 
 # Docker 사용</br>
 ## 기본 실행
-> docker run -it {이미지 이름}
+```
+docker run -it {이미지 이름}
+```
 ## Dockerfile을 이용하여 이미지 만들기
-> docker build -t {이미지 이름} .    <- 현재 위치에 Dockerfile이 없다면 상대경로 입력
-
+```
+docker build -t {이미지 이름} .    <- 현재 위치에 Dockerfile이 없다면 상대경로 입력
+```
 ## Dockerfile을  컨테이너 만들기
-> docker run --name {컨테이너 이름} -v $(pwd):{볼륨 위치} -p 8080:8080 -d {이미지 이름}
-
+```
+docker run --name {컨테이너 이름} -v $(pwd):{볼륨 위치} -p 8080:8080 -d {이미지 이름}
+```
 ## 컨테이너 중단
 ```
 docker stop $(docker ps -aq)
