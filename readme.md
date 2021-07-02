@@ -27,9 +27,11 @@ wsl --set-version Ubuntu-18.04 2
 wsl --set-default-version 2
 ```
 ```
--> 변환이 진행 중입니다. 몇 분 정도 걸릴 수 있습니다...
-    WSL 2와의 주요 차이점에 대한 자세한 내용은 https://aka.ms/wsl2를 참조하세요
-    변환이 완료되었습니다. 
+변환이 진행 중입니다. 몇 분 정도 걸릴 수 있습니다...
+WSL 2와의 주요 차이점에 대한 자세한 내용은 https://aka.ms/wsl2를 참조하세요
+변환이 완료되었습니다. 
+```
+```
 Name               state      version
 Ubuntu-18.04 LTS   Running     2  
 ```     
