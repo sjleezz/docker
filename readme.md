@@ -35,3 +35,16 @@
 
 ## Dockerfile을  컨테이너 만들기
 > docker run --name {컨테이너 이름} -v $(pwd):{볼륨 위치} -p 8080:8080 -d {이미지 이름}
+
+## 컨테이너 중단
+```
+docker stop $(docker ps -aq)
+```
+## 컨테이너 삭제
+```
+docker rm $(docker ps -aq)
+```
+## 이미지 삭제 (사용중이지 않는 이미지들만)
+```
+docker image prune -a
+```
