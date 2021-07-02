@@ -1,4 +1,4 @@
-<title>Docker</title></br>
+<h>Docker</h></br>
 도커에 대한 공부한 내용들을 적는 곳
 
 1. WSL2 설치
