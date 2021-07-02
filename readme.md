@@ -27,6 +27,11 @@
 >1. 가상 디스크 시스템 제한으로 인해 요청한 작업을 완료할 수 없습니다. 가상 하드 디스크 파일은 압축이 풀려 있는 상태이고 암호화되지 않아야 하며 스파스가 아니어야 합니다.     
 -> UserName\AppData\Local\Package\CanonicalGroupLimited 폴더 우측 클릭, 고급탭 클릭, "내용을 압축하여 디스크 공간 절약" 및 "데이터 보호를 위해 내용을 암호화" 확인란이 선택 취소되어 있는지 확인
 
-## Docker 사용</br>
+# Docker 사용</br>
+## 기본 실행
+> docker run -it {이미지 이름}
+## Dockerfile을 이용하여 이미지 만들기
+> docker build -t {이미지 이름} .    <- 현재 위치에 Dockerfile이 없다면 상대경로 입력
 
-
+## Dockerfile을  컨테이너 만들기
+> docker run --name {컨테이너 이름} -v $(pwd):{볼륨 위치} -p 8080:8080 -d {이미지 이름}
