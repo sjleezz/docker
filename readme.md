@@ -1,4 +1,4 @@
-
+![Alt text](/docker/img.jpg)
 # Docker 설치</br>
  도커에 대한 공부한 내용들을 적는 곳
 
