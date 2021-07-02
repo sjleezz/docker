@@ -48,31 +48,31 @@ Ubuntu-18.04 LTS   Running     2
 
 
 # Docker 사용</br>
-## 기본 실행
+### 기본 실행
 ```
 docker run -it {이미지 이름} // docker hub에 업로드되어 있는 오피셜 이미지들을 가져와서 컨테이너로 만들어 사용 가능
 ```
-## Dockerfile을 이용하여 커스텀 이미지 만들기
+### Dockerfile을 이용하여 커스텀 이미지 만들기
 ```
 docker build -t {이미지 이름} .    <- 현재 위치에 Dockerfile이 없다면 상대경로 입력
 ```
-## Dockerfile을 이용하여 컨테이너 만들기
+### Dockerfile을 이용하여 컨테이너 만들기
 ```
 docker run --name {컨테이너 이름} -v $(pwd):{볼륨 위치} -p 8080:8080 -d {이미지 이름}
 ```
-## 컨테이너 중단
+### 컨테이너 중단
 ```
 docker stop $(docker ps -aq)
 ```
-## 컨테이너 삭제
+### 컨테이너 삭제
 ```
 docker rm $(docker ps -aq)
 ```
-## 이미지 삭제 (사용중이지 않는 이미지들만)
+### 이미지 삭제 (사용중이지 않는 이미지들만)
 ```
 docker image prune -a
 ```
-## Docker 일괄 실행
+### Docker 일괄 실행
 ```
 docker-compose up -d(백그라운드 실행 = daemon) 
 ```
