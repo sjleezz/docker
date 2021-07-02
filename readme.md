@@ -50,13 +50,13 @@ Ubuntu-18.04 LTS   Running     2
 # Docker 사용</br>
 ## 기본 실행
 ```
-docker run -it {이미지 이름}
+docker run -it {이미지 이름} // docker hub에 업로드되어 있는 오피셜 이미지들을 가져와서 컨테이너로 만들어 사용 가능
 ```
-## Dockerfile을 이용하여 이미지 만들기
+## Dockerfile을 이용하여 커스텀 이미지 만들기
 ```
 docker build -t {이미지 이름} .    <- 현재 위치에 Dockerfile이 없다면 상대경로 입력
 ```
-## Dockerfile을  컨테이너 만들기
+## Dockerfile을 이용하여 컨테이너 만들기
 ```
 docker run --name {컨테이너 이름} -v $(pwd):{볼륨 위치} -p 8080:8080 -d {이미지 이름}
 ```
